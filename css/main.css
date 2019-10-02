@@ -104,9 +104,23 @@ ul.nav-list-top a {
 }
 .sec-2-textnow {
     display: flex;
+    position: relative;
     align-items: center;
     justify-content: center;
-    height: 377px;    
+    height: 377px;  
+    border-top: 10px solid orange;
+    clip-path: (0% 40px, 0% 100%, 100% 100%, 100% 40px, calc(50% + 50px) 40px, 50% 0, calc(50% - 50px) 40px);   
+    z-index: 2;
+}
+.sec-2-textnow:before {
+  position: absolute;
+  content: "";
+  border-top: 50px solid orange;
+  border-right: 60px solid transparent;
+  border-left: 60px solid transparent;
+  margin-right: -60px;
+  top: 0px;
+  z-index: 1;
 }
 
 .sec-2-textnow p {
