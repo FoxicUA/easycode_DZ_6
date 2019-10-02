@@ -115,11 +115,12 @@ ul.nav-list-top a {
 .sec-2-textnow:before {
   position: absolute;
   content: "";
-  border-top: 50px solid orange;
+  border-top: 50px solid #cfcea7;
   border-right: 60px solid transparent;
   border-left: 60px solid transparent;
   margin-right: -60px;
   top: 0px;
+  left: 10%;
   z-index: 1;
 }
 
